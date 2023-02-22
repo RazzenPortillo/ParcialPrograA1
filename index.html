@@ -81,7 +81,6 @@
                                     placeholder="Buscar por codigo o nombre"></th>
                             </tr>
                             <tr>
-                                <th>idCliente</th>
                                 <th>Codigo</th>
                                 <th>Nombre</th>
                                 <th>Direccion</th>
@@ -90,7 +89,6 @@
                         </thead>
                         <tbody>
                             <tr  style="font-weight: 700;" v-for="cliente in clientes" :key="cliente.idCliente" @click="modificarCliente(cliente)" >
-                                <td>{{ alumno.idCliente }}</td>
                                 <td>{{ alumno.Codigo }}</td>
                                 <td>{{ alumno.Nombre}}</td>
                                 <td>{{ alumno.Direccion}}</td>
@@ -119,7 +117,6 @@
                     buscar: '',
                     clientes: [],
                     cliente:{
-                        idCliente : '',
                         Codigo : '',
                         Nombre : '',
                         Direccion : '',
@@ -152,7 +149,6 @@
                 },
                 nuevoCliente(){
                     this.accion = 'nuevo';
-                    this.cliente.idCliente = '';
                     this.cliente.Codigo = '';
                     this.cliente.nombre = '';
                     this.cliente.direccion = '';
