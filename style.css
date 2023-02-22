@@ -1,0 +1,32 @@
+body {
+
+    background-image: url(koro-san.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin: 30px;
+}
+
+table {
+
+    background-color:antiquewhite;
+
+}
+
+.card{
+    background-color:antiquewhite;
+
+    margin: 50px;
+}
+
+.card-header {
+
+    background-color:antiquewhite;
+
+}
+
+.card {
+
+    width: 100%;
+
+}
