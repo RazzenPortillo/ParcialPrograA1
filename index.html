@@ -164,7 +164,8 @@
                 },
                 listarClientes(){
                     this.alumnos = JSON.parse( localStorage.getItem('alumnos') || "[]" )
-                        .filter(cliente=>cliente.nombre.toLowerCase().indexOf(this.buscar.toLowerCase())>-1);
+                    .filter(cliente=>cliente.nombre.toLowerCase().indexOf(this.buscar.toLowerCase())>-1 ||
+                                cliente.codigo.indexOf(this.buscar)>-1);
                 }
             },
             created(){
